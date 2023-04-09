@@ -1,0 +1,121 @@
+@charset "UTF-8";
+:root {
+    --vary-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white-one: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+    --main-ff: 'Inter', sans-serif;
+    --details-ff: 'Lexend Deca', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body, html {
+    height: 100%;
+    display: grid;
+}
+body {
+    font-family: var(--main-ff);
+    background-color: var(--vary-dark-blue);
+    color: var(--white);
+}
+body img {
+    max-width: 100%;
+}
+#grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: clamp(60%, 60%, 900px);
+    margin: auto;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 10px;
+}
+#hero__img {
+    width: 90%;
+    background: url("./images/image-header-desktop.jpg");
+    box-shadow: inset 0 0 0 1000px hsla(277, 92%, 33%, 0.637);
+    grid-column: 2;
+    max-width: 100%;
+    height: 100%;
+    justify-self: end;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#hero__txt {
+    grid-row: 1;
+    margin: 3rem 3rem 0 3rem;
+}
+#hero__txt h1{
+    margin-bottom: 1.5rem;
+}
+#hero__txt p {
+    max-width: 40ch;
+    margin-bottom: 4rem;
+    color: var(--slightly-transparent-white-one);
+    line-height: 1.75rem;
+}
+#hero__txt h1 span {
+    color: var(--soft-violet);
+}
+#stats-container {
+    display: flex;
+    gap: 2.5rem;
+}
+.stats__card span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: .25rem;
+}
+.stats__card p {
+    font-family: var(--details-ff);
+    color: var(--slightly-transparent-white-two);
+}
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+footer > .attribution {
+    text-align: center; 
+    color: var(--slightly-transparent-white-two);
+}
+footer > .attribution a {
+    color: #fff; 
+}
+@media (max-width: 600px) {
+    
+    #grid-container {
+        display: block;
+        max-width: 90%;
+        margin: 2rem auto ;
+    }
+    #hero__img {
+        width: 100%;
+        height: 480px;
+        background: url("./images/image-header-mobile.jpg");
+        box-shadow: inset 0 0 0 1000px hsla(277, 92%, 33%, 0.637);
+        border-top-left-radius: 10px;
+    }
+    #hero__txt {
+        text-align: center;
+    }
+    #hero__txt p {
+        margin-bottom: 2rem;
+    }
+    #stats-container {
+        display: block;
+        font-size: 1.25rem;
+    }
+    footer {
+        position: static;
+    }
+}
