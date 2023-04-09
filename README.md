@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- <a src="https://www.frontendmentor.io/solutions/stats-preview-card-component-H5es95YC3m" target="_blank">Solution link</a>
+- <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-H5es95YC3m" target="_blank">Solution link</a>
 - [Live Site URL](https://sucena29.github.io/stats-preview-card-component/)
 
 ## My process
