@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/stats-preview-card-component-H5es95YC3m)
-- Live Site URL: (https://sucena29.github.io/stats-preview-card-component/)
+- [Solution URL] (https://www.frontendmentor.io/solutions/stats-preview-card-component-H5es95YC3m)
+- [Live Site URL] (https://sucena29.github.io/stats-preview-card-component/)
 
 ## My process
 
